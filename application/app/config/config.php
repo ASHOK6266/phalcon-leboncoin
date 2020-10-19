@@ -12,11 +12,10 @@ return new \Phalcon\Config([
         'adapter'     => 'Mysql',
         'host'        => '127.0.0.1',
         'username'    => 'root',
-        'password'    => env('MYSQL_DB_PASSWORD'),
+        'password'    => 'root',
         'dbname'      => 'lebocoin',
         'charset'     => 'utf8',
-        'port'      => env('MYSQL_DB_PORT')
-
+        'port'      => '3306'
     ],
     'application' => [
         'appDir'         => APP_PATH . '/',
@@ -30,3 +29,4 @@ return new \Phalcon\Config([
         'baseUri'        => '/',
     ]
 ]);
+
