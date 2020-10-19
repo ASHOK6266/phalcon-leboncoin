@@ -10,15 +10,16 @@ defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
 return new \Phalcon\Config([
     'database' => [
         'adapter'     => 'Mysql',
-        'host'        => 'localhost',
+        'host'        => '127.0.0.1',
         'username'    => 'root',
-        'password'    => '',
-        'dbname'      => 'test',
+        'password'    => 'root',
+        'dbname'      => 'lebocoin',
         'charset'     => 'utf8',
+        'port'      => '3306'
     ],
     'application' => [
         'appDir'         => APP_PATH . '/',
-        'controllersDir' => APP_PATH . '/controllers/',
+        'controllersDir'     => APP_PATH . '/controllers/',
         'modelsDir'      => APP_PATH . '/models/',
         'migrationsDir'  => APP_PATH . '/migrations/',
         'viewsDir'       => APP_PATH . '/views/',
@@ -28,3 +29,4 @@ return new \Phalcon\Config([
         'baseUri'        => '/',
     ]
 ]);
+
